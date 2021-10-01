@@ -1,0 +1,215 @@
+:root {
+    /*
+     Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    /*neutral*/
+    --Pale_Blue: hsl(243, 100%, 93%);
+    --Grayish_Blue: hsl(229, 7%, 55%);
+    --Dark_Blue: hsl(228, 56%, 26%);
+    --Very_Dark_Blue: hsl(229, 57%, 11%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-mobile.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card {
+    width: 90%;
+    height: 200px;
+    background-color: var(--Dark_Blue);
+    margin: 10px;
+}
+.card_1 {
+    
+    
+    border-radius: 5px 100px 5px 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+.logo {
+    width: 50%;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.icons {
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.document ,.folder  ,.upload {
+    font-size: 14px;
+    background-color: var(--Very_Dark_Blue);
+    padding: 8px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_2 {
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bar {
+    width: 90%;
+    background-color: var(--Very_Dark_Blue);
+    padding: 1%;
+    border-radius: 20px;
+}
+h3 {
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: var(--Pale_Blue);
+}
+strong {
+    font-weight: 700;
+}
+
+.bar_inside {
+    border-radius: 20px;
+    width: 81.5%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%) ,hsl(335, 100%, 65%));
+    display: flex;
+    justify-content: flex-end;
+}
+.ball {
+    height: 10px;
+    background-color: #fff;
+    width: 2.5%;
+    border-radius: 100%;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 15%;
+}
+
+.data_span {
+    width: 50%;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    border-radius: 5%;
+    text-align: center; 
+}
+
+
+
+.data_span .info_giga {
+    color: var(--Very_Dark_Blue) ;
+    font-size: 38px;
+    position: relative;
+    top: 20px;
+} 
+
+.data_span .info_giga .left_g {
+    text-transform: uppercase;
+    color: var(--Grayish_Blue);
+    font-size: 16px;
+    margin-bottom: 50px;
+    
+}
+.attribution {
+    position: relative;
+    bottom: 40px;
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    main {
+        background-image: url(images/bg-desktop.png) !important;
+        background-position: bottom;
+        background-color: var(--Very_Dark_Blue);
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+
+
+    }
+   
+    .card_1 {
+       width: 25%;
+       margin-right: 2%; 
+    }
+    .card_2 {
+        width: 40%;
+        margin-left: 2%;
+        margin-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .data {
+        margin-bottom: 5px;
+    }
+
+    .data_span {
+        position: absolute;
+        left: 247px;
+        bottom: 160px;
+
+    }
+    .data_span::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top:60%;
+        border-top: solid 50px #fff;
+        border-left: solid 50px transparent;
+        border-right: solid 0px transparent;
+        border-bottom: solid 10px transparent;
+        left: 15.91em;
+       
+    }
+}
